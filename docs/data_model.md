@@ -11,6 +11,13 @@ For the purposes of goal \#1 of this data sprint, the table definitions in this 
 
 For this data sprint, the OMOP vocabulary will be required. A version of the vocabulary for the All of Us Research Program can be downloaded [here](https://drive.google.com/file/d/0B1ctb6oEtLWLWFRqYXdWclZkbWM/view?usp=sharing). Once the file is unzipped, the CSV files that contain the vocabulary can be loaded into a database. The load script and table creation files can be found in the [CommonDataModel](https://github.com/OHDSI/CommonDataModel) repo on GitHub. Additionally, for this data sprint, the concept id columns are required to be populated. Examples of how to identify the “concept\_id” fields are in the below tables. It is also recommended to view the tutorials available online for both the CDM ETL (<http://www.ohdsi.org/common-data-model-and-extract-transform-and-load-tutorial/>) and the Vocabulary (<http://www.ohdsi.org/ohdsi-standardized-vocabulary-tutorial-recordings/)>. It is important to note that not all ICD codes map to a condition. It is important to look at the domain of the concept in the OMOP Vocabulary. For example, ICD-9 CM code “V72.19” (Other examination of ears and hearing) is considered a procedure and thus should be placed in the procedure\_occurrence table. Likewise, there are other ICD codes that should be placed in other tables.
 
+
+# Clinical Case Example
+
+This document will use the following case example to show how a patient’s record would be exported.
+
+A 51-year-old (DOB: 1/2/1965), African American, non-Hispanic, male patient named John Doe visited the ED on 3/1/2106 at 3:12 a.m. with groin and abdominal pain. During the ED visit, it was determined that the patient had a kidney stone. Patient received metoclopramide 10 mg IV and morphine 6 mg IV at the ED. Subsequently, the patient had two outpatient office visits with a urologist on 3/15/2016 and 3/31/2016 with a primary diagnosis of calculus of ureter (ICD9:592.1) and was prescribed Flomax for three months. Following these visits, the patient had a lithotripsy preformed on 4/5/2016 with an ICD9 diagnosis code of 592.1 and procedure code of 98.51.
+
 # person
 
 | Field                          | Required For Export     | Type     | Description |

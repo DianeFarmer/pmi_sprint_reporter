@@ -33,12 +33,6 @@ Data sprint submissions **must not** contain Protected Health Information (PHI) 
 
 For this sprint, all dates will be de-identified and patient ids will be converted to a random number. All date fields will preserve the year, but set the month and day to Jan 1. For example, if an encounter occurs on March 12, 1985, the date will be de-identified to Jan 1, 1985. Also, all patients **greater than 80 years** of age should be removed from the submission.
 
-# Clinical Case Example
-
-This document will use the following case example to show how a patient’s record would be exported.
-
-A 51-year-old (DOB: 1/2/1965), African American, non-Hispanic, male patient named John Doe visited the ED on 3/1/2106 at 3:12 a.m. with groin and abdominal pain. During the ED visit, it was determined that the patient had a kidney stone. Patient received metoclopramide 10 mg IV and morphine 6 mg IV at the ED. Subsequently, the patient had two outpatient office visits with a urologist on 3/15/2016 and 3/31/2016 with a primary diagnosis of calculus of ureter (ICD9:592.1) and was prescribed Flomax for three months. Following these visits, the patient had a lithotripsy preformed on 4/5/2016 with an ICD9 diagnosis code of 592.1 and procedure code of 98.51.
-
 # Data and Format
 
 Sites are asked to send data for 100 unique patients who had an encounter during the 2015 calendar year. Ideally, patients’ data will have a good mix of inpatient, outpatient and ED visits. Sites are asked to submit one file per table in CSV format with the table name as part of the file name. The file format must adhere to the Comma-Separated Values (CSV) file format (<https://tools.ietf.org/html/rfc4180>).
