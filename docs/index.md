@@ -4,7 +4,7 @@ layout: default
 
 # Introduction
 
-This Data Sprint is an opportunity for the Data Resource Core (DRC) to assess the technical capabilities and understand the source data of the Healthcare Provider Organization (HPO) sites required to transmit EHR data. Your participation as a HPO will provide key insight towards the integration of this information into the All of Us Research Program. We provide here an overview of the components of the Data Sprint Request:
+The purpose of the Data Sprint module is to provide a structured framework for data stewards at Health Provider Organizations to become familiar with the technical requirements associated with submitting EHR data for the All of us Research Program **prior** to operating within the live production environment. It is also an opportunity for the Data Resource Core (DRC) to assess the technical capabilities and needs of participating sites. Your participation as a HPO will provide key insight towards the integration of this information into the All of Us Research Program. We provide here an overview of the components of the Data Sprint process:
 
  1. Overview
  1. [Data Model](data_model.md)
@@ -12,18 +12,22 @@ This Data Sprint is an opportunity for the Data Resource Core (DRC) to assess th
 
 # Data Sprint Goals
 
- 1.  **Become Familiar with the OHDSI Vocabulary**. Based on the previous data sprint, an abridged version of the OMOP vocabulary was created. This data sprint will assess sites capabilities in converting their coded data into OMOP concept IDs.
  1.  **Examine Load Process of Data**. The data sent will be transformed into a common data model to examine the data integrity of the EHR data sent. This will allow the DRC to better facilitate HPOs in transforming their data to the OMOP Common Data Model.
+ 1.  **Become Familiar with the OHDSI Vocabulary**. Based on the previous data sprint, an abridged version of the OMOP vocabulary was created. This data sprint will assess sites capabilities in converting their coded data into OMOP concept IDs.
 
 # Timeline
 
-This catch-up data sprint is planned for five weeks.
+Sprints are planned according to the schedule below. For each deliverable you are expected to submit records associated with a sample of 100 unique patient records. For example, records in `visit_occurrence` and `condition_occurrence` records should be linked to records in `person`.
 
- * Week 1 (1/5-1/15): Send a selected sample of 100 unique patients and submit the following tables: patient table and visit\_occurrence
- * Week 2 (1/16-1/22): For the same selected sample of 100 patients, send the following tables to the DRC: condition\_occurrence
- * Week 3 (1/23-1/29): For the same selected sample of 100 patients, send the following tables to the DRC: procedure\_occurrence
- * Week 4 (1/30-2/5): For the same selected sample of 100 patients, send the following tables to the DRC: measurement
- * Week 5 (2/6-2/12): For the same selected sample of 100 patients, send the following tables to the DRC: drug\_exposure
+| Week | End date | Deliverable |
+| --- | --- | --- |
+| 1 | 11/19/17 | Tables: person, visit_occurrence |
+| 2 | 11/26/17 | Tables: condition_occurrence, procedure_occurrence |
+| 3 | 12/03/17 | Tables: drug_exposure |
+| 4 | 12/10/17 | Tables: measurement |
+| 5 | 12/15/17 | Catch up / Review reports |
+
+Data sprint submissions **must not** contain Protected Health Information (PHI) or Personal Identiable Information (PII). See the guides provided by the [U.S. Department of Health and Human Services](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification) and [U.S. Department of Labor](https://www.dol.gov/general/ppii) for more information.
 
 # De-Identification
 
