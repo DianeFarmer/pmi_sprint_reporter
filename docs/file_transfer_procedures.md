@@ -37,7 +37,7 @@ If the file is from a site within an HPO, like Cornell within the NYC HPO, the f
 
 ## File transmission
 
-All files will be sent to Columbia University Medical Center (CUMC) via a secure file transfer portal (<https://transfer.nyp.org)>. In order to send files to CUMC, individuals must be registered with the system, which will be initiated via email. Each HPO identified one contact person who will participate in the data sprints. The below steps must be followed to setup an account
+All files will be sent to Columbia University Medical Center (CUMC) via a secure file transfer portal ([transfer.nyp.org](https://transfer.nyp.org)). In order to send files to CUMC, individuals must be registered with the system, which will be initiated via email. Each HPO identified one contact person who will participate in the data sprints. The below steps must be followed to setup an account
 
 1. An email like the one below will be sent to the identified individuals. Click on the link in the email
 
