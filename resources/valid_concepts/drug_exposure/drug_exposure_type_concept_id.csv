@@ -1,4 +1,5 @@
 "concept_id","concept_name"
+"581373","Physician administered drug (identified from EHR order)"
 "38000175","Prescription dispensed in pharmacy"
 "38000176","Prescription dispensed through mail order"
 "38000177","Prescription written"
@@ -8,5 +9,6 @@
 "43542356","Physician administered drug (identified from EHR problem list)"
 "43542357","Physician administered drug (identified from referral record)"
 "43542358","Physician administered drug (identified from EHR observation)"
+"44777970","Randomized Drug"
 "44787730","Patient Self-Reported Medication"
 "0","Unknown"
